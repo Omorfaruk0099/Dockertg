@@ -1,4 +1,15 @@
 FROM node:latest
 RUN npm install
-RUN npm i net && npm i http2 && npm i tls && npm i cluster && npm i url && npm i crypto && npm i fs && npm i axios && npm i cheerio && npm i gradient-string && npm install node-telegram-bot-api && npm install shell-quote
+RUN net
+RUN http2
+RUN tls
+RUN cluster
+Run url
+RUN crypto
+RUN fs
+RUN axios
+RUN cheerio
+RUN gradient-string
+RUN node-telegram-bot-api
+RUN shell-qoute
 CMD ["node", "bot.js"]

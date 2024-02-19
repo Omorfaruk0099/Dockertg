@@ -4,7 +4,7 @@ RUN net
 RUN http2
 RUN tls
 RUN cluster
-Run url
+RUN url
 RUN crypto
 RUN fs
 RUN axios

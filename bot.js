@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const { exec } = require('child_process');
 
 // Telegram bot token
-const token = '6744405305:AAHa1Rd_0JLYDNu1Jh87Knu0Xl7OArNzcAA';
+const token = '6303718232:AAHm_fpO3oVMNFnxRxy3PxModkZtf_IK_Hs';
 const bot = new TelegramBot(token, { polling: true });
 
 // Function to check if a string is a valid URL
